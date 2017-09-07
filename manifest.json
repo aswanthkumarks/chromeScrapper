@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "KKR",
+  "version": "0.1",
+  "author": "@aswanthkumarks",
+
+  "description": "Manipulate the DOM when the page is done loading",
+  "background": {
+		"scripts": ["jquery-3.2.1.min.js", "popup.js"],
+		"persistent": true
+	},
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "default_icon": "images/clock-icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/",
+    "https://*/"
+  ]
+}
